@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1150</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Create A Video</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>620</y>
+      <width>104</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>seconds</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>620</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Duration:</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>10</y>
+      <width>1111</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Sunken</enum>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>659</y>
+      <width>1111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1150</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave_Image"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_Image"/>
+    <addaction name="actionAdd_Text"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_Frame"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <widget class="QMenu" name="menuFlip">
+     <property name="title">
+      <string>Flip</string>
+     </property>
+     <addaction name="actionFlip_Horizontally"/>
+     <addaction name="actionFlip_Vertically"/>
+     <addaction name="actionFlip_Both_Sides"/>
+    </widget>
+    <addaction name="menuFlip"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save Video</string>
+   </property>
+  </action>
+  <action name="actionFlip_Horizontally">
+   <property name="text">
+    <string>Flip Horizontally</string>
+   </property>
+  </action>
+  <action name="actionFlip_Vertically">
+   <property name="text">
+    <string>Flip Vertically</string>
+   </property>
+  </action>
+  <action name="actionFlip_Both_Sides">
+   <property name="text">
+    <string>Flip Both Sides</string>
+   </property>
+  </action>
+  <action name="actionAdd_Image">
+   <property name="text">
+    <string>Add Image</string>
+   </property>
+  </action>
+  <action name="actionAdd_Text">
+   <property name="text">
+    <string>Add Text</string>
+   </property>
+  </action>
+  <action name="actionChange_Text">
+   <property name="text">
+    <string>Change Text</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionAdd_Frame">
+   <property name="text">
+    <string>Add Frame</string>
+   </property>
+  </action>
+  <action name="actionDelete_Frame">
+   <property name="text">
+    <string>Delete Frame</string>
+   </property>
+  </action>
+  <action name="actionSave_Image">
+   <property name="text">
+    <string>Save Image</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
